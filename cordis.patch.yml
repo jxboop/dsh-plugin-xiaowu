@@ -1,0 +1,9 @@
+# dsh-plugin-xiaowu bundle patch.
+#
+# The plugin is dual-face: this host row makes Cordis mount the package, so the
+# client-modules scanner discovers its `dsh.client` declaration; everything the
+# user actually sees lives in exports["./client"] — the browser half.
+
+- insert:
+    - id: xiaowu-pet
+      name: dsh-plugin-xiaowu
